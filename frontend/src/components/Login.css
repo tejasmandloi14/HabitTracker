@@ -1,0 +1,69 @@
+/* Apply styles only inside .login-container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  }
+  
+  /* Style the login box */
+  .login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  /* Apply styles only inside login-box */
+  .login-box h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-box button:hover {
+    background: #45a049;
+  }
+  
+  /* Error message specific to login */
+  .login-box .error-message {
+    color: red;
+    background: #ffe6e6;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .signup-link {
+    margin-top: 10px;
+    color: #ff7e5f;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+    

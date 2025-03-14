@@ -1,0 +1,133 @@
+/* General Layout */
+.dashboard-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Title */
+  .dashboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+  }
+  .logout-btn:hover {
+    background-color: darkred;
+  }
+  
+  /* Habit Input */
+  .habit-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .habit-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+  }
+  
+  .streak-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  /* Add Habit Button */
+  .add-habit-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .add-habit-btn:hover {
+    background-color: darkgreen;
+  }
+  
+  /* Habit List */
+  .habit-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .habit-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f8f8;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border-left: 5px solid blue;
+    transition: transform 0.2s;
+  }
+  .habit-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Completed Habit */
+  .completed {
+    background: #d4edda;
+    border-left: 5px solid green;
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  /* Complete Button */
+  .complete-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .complete-btn:hover {
+    background-color: darkblue;
+  }
+  
+  /* Disabled Complete Button */
+  .complete-btn.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .delete-btn:hover {
+    background-color: red;
+  }
+  
