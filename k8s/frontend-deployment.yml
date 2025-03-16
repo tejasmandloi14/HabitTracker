@@ -1,0 +1,23 @@
+apiVersion : apps/v1
+kind : Deployment
+metadata : 
+  name : frontend-deployment
+  namespace : habittracker-app
+spec : 
+  replicas : 1
+  selector:
+    matchLabels:
+      app : frontend
+  template:
+    metadata:
+      name: frontend-pod 
+      namespace : habittracker-app
+      labels : 
+        app : frontend
+    spec :
+      containers:
+        - name : frontend
+          image : tejasmandloi14/habittracker_frontend:latest
+          ports:
+          - containerPort : 3000
+            

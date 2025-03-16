@@ -1,0 +1,40 @@
+apiVersion : apps/v1
+kind : Deployment
+metadata : 
+  name : backend-deployment
+  namespace : habittracker-app
+spec : 
+  replicas : 1
+  selector:
+    matchLabels:
+      app : backend
+  template:
+    metadata:
+      name: backend-pod 
+      namespace : habittracker-app
+      labels : 
+        app : backend
+    spec :
+      containers:
+        - name : backend
+          image : tejasmandloi14/habittracker_server:latest
+          ports:
+          - containerPort : 5000
+          env:
+            - name: MONGO_USER
+              valueFrom:
+                secretKeyRef:
+                  name: myapp-secret
+                  key: MONGO_USER
+            - name: MONGO_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: myapp-secret
+                  key: MONGO_PASS
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: myapp-secret
+                  key: JWT_SECRET
+
+
